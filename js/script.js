@@ -1,4 +1,16 @@
-// Sử dụng setTimeout để chuyển hướng sau 4 giây
+// Lấy giá trị 'ref' từ URL
+const urlParams = new URLSearchParams(window.location.search);
+const ref = urlParams.get('ref');
+
+// Link nhóm Zalo gốc của bạn
+let zaloLink = "https://zalo.me/g/ozckmv057";
+
+// Nếu có giá trị 'ref', thêm vào link Zalo
+if (ref) {
+    zaloLink += `?ref=${ref}`;
+}
+
+// Chuyển hướng sau khi video kết thúc hoặc theo thời gian chờ
 setTimeout(function() {
-    window.location.href = "https://zalo.me/g/dygfga105"; // Thay thế link nhóm Zalo của bạn
-}, 4000); // Thời gian chờ là 4000ms (4 giây)
+    window.location.href = zaloLink;
+}, 4000); // 4000ms (4 giây)
