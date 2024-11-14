@@ -3,7 +3,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const ref = urlParams.get('ref');
 
 // Link nhóm Zalo gốc của bạn
-let zaloLink = "https://zalo.me/g/ozckmv057";
+let zaloLink = "https://zalo.me/g/lzlqwx001";
 
 // Nếu có giá trị 'ref', thêm vào link Zalo
 if (ref) {
